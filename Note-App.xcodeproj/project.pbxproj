@@ -15,6 +15,7 @@
 		C94FEEC32B02CD180003B7AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C94FEEC12B02CD180003B7AA /* LaunchScreen.storyboard */; };
 		C96752E82B02DB2B005F9F49 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C96752E72B02DB2B005F9F49 /* Alamofire */; };
 		C96752EA2B02DB4C005F9F49 /* APIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96752E92B02DB4C005F9F49 /* APIFunctions.swift */; };
+		C973DFDE2B067FC60036481A /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C973DFDD2B067FC60036481A /* AddNoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C94FEEC22B02CD180003B7AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C94FEEC42B02CD180003B7AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C96752E92B02DB4C005F9F49 /* APIFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFunctions.swift; sourceTree = "<group>"; };
+		C973DFDD2B067FC60036481A /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				C94FEEC12B02CD180003B7AA /* LaunchScreen.storyboard */,
 				C94FEEC42B02CD180003B7AA /* Info.plist */,
 				C96752E92B02DB4C005F9F49 /* APIFunctions.swift */,
+				C973DFDD2B067FC60036481A /* AddNoteViewController.swift */,
 			);
 			path = "Note-App";
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 				C96752EA2B02DB4C005F9F49 /* APIFunctions.swift in Sources */,
 				C94FEEBB2B02CD160003B7AA /* ViewController.swift in Sources */,
 				C94FEEB72B02CD160003B7AA /* AppDelegate.swift in Sources */,
+				C973DFDE2B067FC60036481A /* AddNoteViewController.swift in Sources */,
 				C94FEEB92B02CD160003B7AA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

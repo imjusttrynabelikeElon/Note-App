@@ -14,14 +14,31 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var notesArray = [Note]()
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! AddNoteViewController
+        
+        if segue.identifier == "updateNoteSegue" {
+            vc.note = notesArray[notesTableView.indexPathForSelectedRow!.row]
+            vc.update = true
+        //
+        }
+    }
+    
+    
+    
+    
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         
         
         
         
+        
+        
         return notesArray.count
-    }
+    }       // this is the notes.array
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "prototypeCell", for: indexPath)
@@ -31,7 +48,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+        APIFunctions.functions.fetchNotes()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        APIFunctions.functions.fetchNotes()
+    }
+    
+    
     @IBOutlet weak var notesTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
